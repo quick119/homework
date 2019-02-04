@@ -12,14 +12,14 @@ fun main() {
     tic.print()
 }
 
-class Ticket(var tickets: Int, var round_trip: Int) {
-    var round = (round_trip * 2000 * 0.9f).toInt()
-    var single = tickets - round_trip
+class Ticket(var tickets: Int, var roundTrip: Int) {
+    var round = (roundTrip * 2000 * 0.9f).toInt()
+    var single = tickets - roundTrip
     var total =  single * 1000 + round
 
     fun print() {
         println("Total tickets: " + tickets + "\n"
-                + "Round-trip: " + round_trip + "\n"
+                + "Round-trip: " + roundTrip + "\n"
                 + "Total: " + total)
     }
 }
